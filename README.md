@@ -44,3 +44,52 @@ src/
             ├── application.properties
             └── schema.sql
 
+Setup Instructions
+1️⃣ Clone the Repository
+git clone https://github.com/Jalbizur/Java-Inventory-API.git
+cd Java-Inventory-API
+2️⃣ Configure MySQL
+
+Create a database:
+
+CREATE DATABASE inventorydb;
+
+Update your credentials inside application.properties:
+
+spring.datasource.url=jdbc:mysql://localhost:3306/inventorydb
+spring.datasource.username=Root
+spring.datasource.password=password
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.database-platform=org.hibernate.dialect.MySQLDialect
+3️⃣ Run the Application
+mvn spring-boot:run
+
+Server starts at:
+
+http://localhost:8080  
+
+API Endpoints
+➤ GET All Products
+GET /api/products
+➤ GET Product by ID
+GET /api/products/{id}
+➤ POST Create Product
+POST /api/products
+Content-Type: application/json
+
+Example body:
+
+{
+  "name": "Laptop",
+  "price": 999.99,
+  "quantity": 5
+}
+➤ DELETE Product
+DELETE /api/products/{id}
+
+Author
+
+Jayson Albizures
+Java & Backend Developer
+GitHub: https://github.com/Jalbziur
