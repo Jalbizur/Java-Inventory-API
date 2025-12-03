@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PersistenceUnitSettings">
+    <persistence-units>
+      <persistence-unit moduleName="Inventory-Management" name="Inventory-Management" framework="JPA" ormUnit="Inventory-Management:Inventory-Management" defaultDataSourceId="c9bab468-6d8f-49c0-86f1-65395d075205" />
+    </persistence-units>
+  </component>
+</project>
